@@ -8,18 +8,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-a {
+a,
+button {
   text-decoration: none;
   color: inherit;
-  border-radius: 20px;
-  padding: 11px 18px;
-}
-button {
-  color: inherit;
-  border-radius: 20px;
-  padding: 11px 18px;
+  border-radius: 17px;
+  padding: 6px 11px;
   border: none;
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+a:hover,
+button:hover {
+  background-color: rgba(240, 248, 255, 0.235);
+  cursor: pointer;
 }
 body {
   font-family: "uberfont";
@@ -32,6 +34,12 @@ header {
   display: flex;
   padding: 16px 55px;
   align-items: center;
+}
+header > a {
+  font-size: 30px;
+}
+header > a:hover {
+  background-color: transparent;
 }
 header .right-nav {
   margin-left: auto; /*push right-nav to the right*/
