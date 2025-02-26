@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "uberfont";
+  src: url(./UberMoveMedium.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 20px;
+  padding: 11px 18px;
+}
+button {
+  color: inherit;
+  border-radius: 20px;
+  padding: 11px 18px;
+  border: none;
+  background-color: transparent;
+}
+body {
+  font-family: "uberfont";
+}
+
+/* header */
+header {
+  color: white;
+  background-color: black;
+  display: flex;
+  padding: 16px 55px;
+  align-items: center;
+}
+header .right-nav {
+  margin-left: auto; /*push right-nav to the right*/
+}
+/* search section */
+.search {
+  display: flex;
+}
+.search > div {
+  flex: 1;
+}

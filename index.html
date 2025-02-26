@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earn Money by Driving or Get a Ride | Uber Kenya</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- meta tags -- og tags- img,desc,title , keywords, desc-->
+  </head>
+  <body>
+    <header>
+      <a href="#">Uber</a>
+      <nav class="main-nav">
+        <a href="#">Ride</a>
+        <a href="#">Drive</a>
+        <a href="#">Business</a>
+        <a href="#">Uber Eats</a>
+        <button>About <ion-icon name="chevron-down-outline"></ion-icon></button>
+      </nav>
+      <nav class="right-nav">
+        <button><ion-icon name="globe-outline"></ion-icon>EN</button>
+        <a href="#">Help</a>
+        <button>Log in</button>
+        <button>Sign up</button>
+      </nav>
+    </header>
+    <main>
+      <section class="search">
+        <div class="form-side">
+          <h1>
+            Go anywhere with <br />
+            Uber
+          </h1>
+          <form action="">
+            <input
+              type="text"
+              name="pickup"
+              id="pickup"
+              placeholder="Pickup location"
+            />
+            <input
+              type="text"
+              name="dropoff"
+              id="dropoff"
+              placeholder="Dropoff location"
+            />
+            <div class="input-group">
+              <input type="date" name="date" id="date" />
+              <input type="time" name="time" id="time" />
+            </div>
+            <div class="input-group">
+              <input type="submit" value="See Prices" />
+              <a href="#">Login to see your recent activity</a>
+            </div>
+          </form>
+        </div>
+        <div class="map-side">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31917.308802682142!2d35.27182870000001!3d0.504586600000049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1740572703030!5m2!1sen!2ske"
+            width="100%"
+            height="550"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
