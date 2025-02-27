@@ -29,7 +29,7 @@ body {
 
 /* header */
 header {
-  color: white;
+  color:aliceblue;
   background-color: black;
   display: flex;
   padding: 16px 55px;
@@ -44,10 +44,200 @@ header > a:hover {
 header .right-nav {
   margin-left: auto; /*push right-nav to the right*/
 }
+
+/* Mobile view for the header */
+@media (max-width: 1024px) {
+  header {
+    padding: 12px 35px;
+  }
+  header > a {
+    font-size: 20px;
+  }
+  .main-nav{
+    display: none;
+  }
+  header .right-nav button:first-child{
+    display: none;
+  }
+  header .right-nav a:nth-child(2){
+    display: none;
+  }
+  header .right-nav button:last-child{
+    color: black;
+    background-color: aliceblue;
+  }
+}
+
 /* search section */
 .search {
   display: flex;
+  padding: 55px;
+}
+.search h1{
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 .search > div {
   flex: 1;
+}
+.search .form-side{
+  padding-right: 180px;
+}
+.search form input{
+  display: block;
+  padding: 14px;
+  border-radius: 7px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background-color: aliceblue;
+  font-size: 18px;
+}
+.search form .input-group{
+  display: flex;
+  /* align-items: center; */
+  gap: 16px;
+}
+.search form input[type="submit"]{
+ width: max-content;
+ background-color: black;
+ color: aliceblue;
+}
+.search form .input-group a{
+  text-decoration: underline;
+  text-decoration-color: rgb(196, 203, 210);
+  text-underline-offset: 8px;
+  transition: all 0.3s ease-in-out;
+
+}
+.search form .input-group a:hover{
+  text-decoration-color: black;
+}
+.search .mobile-illustration{
+  display: none;
+}
+@media (max-width: 1024px) {
+  .search{
+    background-color: black;
+    color: aliceblue;
+    flex-direction: column;
+  }
+  .search .mobile-illustration{
+    display: block;
+    width: 100%;
+  }
+  .search .form-side{
+    /* width: 450px; */
+  }
+  .search .map-side{
+    display: none ;
+  }
+  .search form input[type="submit"]{
+    background-color: aliceblue;
+    color: black;
+   }
+   .search form .input-group a:hover{
+    background-color: transparent;
+    text-decoration-color: white;
+   }
+}
+@media (max-width: 624px) {
+  .search .form-side{
+    padding-right: 0px;
+  } 
+}
+
+/* suggestions */
+.suggestions{
+  padding: 20px 55px;
+}
+.suggestions h2{
+  font-size: 35px;
+  margin: 25px 0px;
+}
+.suggestions .suggestion-box{
+  display: flex;
+  width: 35%;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.suggestion-box h3{
+  margin: 16px 0px;
+}
+.suggestion-box span{
+  background-color: white;
+display: inline-block;
+margin: 20px;
+padding: 10px;
+border-radius: 8px;
+}
+.suggestion-box span:hover{
+  background-color: beige;
+
+}
+@media (max-width: 1024px) {
+  .suggestions .suggestion-box{
+    width: 50%;
+  }
+}
+@media (max-width: 624px) {
+  .suggestions .suggestion-box{
+    width: 100%;
+  }
+}
+
+/* login section (common) */
+.common-section{
+  display: flex;
+  align-items: center;
+  padding:55px;
+}
+.common-section > div{
+  flex: 1;
+}
+.common-section .section-image img{
+  width: 100%;
+}
+.common-section h2{
+  font-size: 55px;
+  line-height: 75px;
+}
+.common-section p{
+margin: 45px 0px;
+}
+.common-section .section-text{
+  padding-right: 100px;
+}
+.links-group a:first-child{
+  background-color: black;
+  color: aliceblue;
+  padding: 17px 20px;
+  display: inline-block;
+}
+.links-group a:last-child{
+  padding: 17px 20px;
+  border-bottom: 1px solid grey;
+  display: inline-block;
+
+}
+.links-group a:last-child:hover{
+border-color: black;
+}
+.drive-sect .section-text{
+  padding-right: 0px;
+  padding-left: 100px ;
+}
+
+@media (max-width: 1024px) {
+  .common-section{
+    flex-direction: column;
+    padding: 25px;
+  }
+  .drive-sect {
+    flex-direction: column-reverse;
+  }
 }
