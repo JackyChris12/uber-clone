@@ -48,7 +48,7 @@ header .right-nav {
 /* Mobile view for the header */
 @media (max-width: 1024px) {
   header {
-    padding: 12px 35px;
+    padding: 12px ;
   }
   header > a {
     font-size: 20px;
@@ -120,9 +120,19 @@ header .right-nav {
 }
 @media (max-width: 1024px) {
   .search{
+    padding: 12px;
     background-color: black;
     color: aliceblue;
     flex-direction: column;
+  }
+  .search h1{
+    text-align: center;
+  }
+  .search h1 br{
+    display: none;
+  }
+  .search #time-group{
+    display: none;
   }
   .search .mobile-illustration{
     display: block;
@@ -239,5 +249,14 @@ border-color: black;
   }
   .drive-sect {
     flex-direction: column-reverse;
+  }
+  .common-section .section-text{
+    padding:0;
+  }
+  .drive-sect .section-text{
+    padding: 0;
+  }
+  .common-section .section-text {
+    margin-bottom: 40px;
   }
 }
